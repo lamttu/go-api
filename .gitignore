@@ -1,0 +1,69 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# Jetbrains
+.DS_Store
+.idea/shelf
+/confluence/target
+/dependencies/repo
+/android.tests.dependencies
+/dependencies/android.tests.dependencies
+/dist
+/local
+/gh-pages
+/ideaSDK
+/clionSDK
+/android-studio/sdk
+out/
+/tmp
+workspace.xml
+*.versionsBackup
+/idea/testData/debugger/tinyApp/classes*
+/jps-plugin/testData/kannotator
+/js/js.translator/testData/out/
+/js/js.translator/testData/out-min/
+/js/js.translator/testData/out-pir/
+.gradle/
+build/
+!**/src/**/build
+!**/test/**/build
+*.iml
+!**/testData/**/*.iml
+.idea**
+kotlin-ultimate/
+node_modules/
+.rpt2_cache/
+libraries/tools/kotlin-test-js-runner/lib/
+local.properties
+buildSrcTmp/
+distTmp/
+outTmp/
+**.xml
