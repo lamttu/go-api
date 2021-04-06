@@ -36,3 +36,20 @@ resource "aws_iam_role" "lambda_exec" {
 EOF
 
 }
+
+resource "aws_api_gateway_rest_api" "go" {
+  name = "go_api"
+}
+
+resource "aws_api_gateway_resource" "hello" {
+  path_part   = "hello"
+  parent_id   = aws_api_gateway_rest_api.go.root_resource_id
+  rest_api_id = aws_api_gateway_rest_api.go.id
+}
+
+resource "aws_api_gateway_method" "get" {
+  rest_api_id   = aws_api_gateway_rest_api.go.id
+  resource_id   = aws_api_gateway_resource.hello.id
+  http_method   = "GET"
+  authorization = "NONE"
+}
