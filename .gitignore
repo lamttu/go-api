@@ -67,3 +67,6 @@ buildSrcTmp/
 distTmp/
 outTmp/
 **.xml
+
+**.zip
+**.txt
